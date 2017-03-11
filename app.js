@@ -32,7 +32,7 @@ const uiTheme = {
   }
 }
 
-const MainRoute = TabRouter({
+const TabRoute = TabRouter({
   Today: { screen: TodayView },
   Profile: { screen: ProfileView },
   Map: { screen: MapView },
@@ -58,7 +58,7 @@ class TabContentNavigator extends Component {
   }
 
   render() {
-    const Component = MainRoute.getComponentForRouteName(this.state.active);
+    const Component = TabRoute.getComponentForRouteName(this.state.active);
     return <Component/>;
   }
 }

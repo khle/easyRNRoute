@@ -16,7 +16,7 @@ import SettingsView from './Pages/setting';
 import { DrawerNavigator, StackNavigator } from 'react-navigation';
 
 
-const ModalNavigator = StackNavigator({
+const stackNavigator = StackNavigator({
   Info: { screen: InfoView },
   Settings: {screen: SettingsView },
   Bookmark: {screen: BookmarkView },
@@ -30,8 +30,8 @@ const easyRNRoute = DrawerNavigator({
   Home: {
     screen: App,
   },
-  Modal: {
-    screen: ModalNavigator
+  Stack: {
+    screen: stackNavigator
   }
 }, {
   contentComponent: DrawerMenu,
