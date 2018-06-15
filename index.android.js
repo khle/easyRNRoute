@@ -44,4 +44,4 @@ const easyRNRoute = DrawerNavigator({
   }
 });
 
-AppRegistry.registerComponent('easyRNRoute', () => easyRNRoute);
+AppRegistry.registerComponent('flightbot', () => easyRNRoute);
